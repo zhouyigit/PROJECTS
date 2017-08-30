@@ -1,0 +1,17 @@
+//
+//  PROJECTS.pch
+//  PROJECTS
+//
+//
+
+#ifndef PROJECTS_pch
+#define PROJECTS_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "TabBarController.h"
+#import "NavigationController.h"
+#import "ViewController.h"//测试类
+
+#endif /* PROJECTS_pch */
