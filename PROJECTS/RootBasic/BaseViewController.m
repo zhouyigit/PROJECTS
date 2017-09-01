@@ -16,10 +16,14 @@
 {
     self = [super init];
     if (self) {
-        //设置背景色
-        self.view.backgroundColor = [UIColor whiteColor];
+        
+        
+        //初始化task容器
+        self.tasks = [[NSMutableDictionary alloc] initWithCapacity:0];
+        
         //vc展现时，隐藏tabbar
         self.hidesBottomBarWhenPushed = YES;
+        
     }
     return self;
 }
@@ -28,7 +32,58 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
+    //设置背景色，该方法如果放在init方法中，会触发viewDidLoad方法
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+//-(void)willMoveToParentViewController:(UIViewController *)parent
+//{
+//    [super willMoveToParentViewController:parent];
+//}
+
+-(void)didMoveToParentViewController:(UIViewController *)parent
+{
+    [super didMoveToParentViewController:parent];
+    if (parent == nil) {
+        NSLog(@"vc_%@ did poped.", self.title);
+        [self releaseSomething];
+    }
+}
+
+-(void)releaseSomething
+{
+    [self deleteTasks];
+    self.tasks = nil;
+}
+
+-(void)saveTask:(NSURLSessionDataTask *)task
+{
+    NSLog(@"inside==%@", task);
+    [self.tasks setObject:task forKey:@(task.taskIdentifier)];
+}
+
+-(void)deleteTask:(NSURLSessionDataTask *)task
+{
+    NSLog(@"inside==%@", task);
+    if (task.state == NSURLSessionTaskStateRunning) {
+        [task cancel];
+    }
+    [self.tasks removeObjectForKey:@(task.taskIdentifier)];
+}
+
+-(void)deleteTasks
+{
+    for (NSURLSessionDataTask *task in self.tasks.allValues) {
+        if (task.state == NSURLSessionTaskStateRunning) {
+            [task cancel];
+        }
+    }
+    [self.tasks removeAllObjects];
+}
+
+-(void)dealloc
+{
+    NSLog(@"vc_%@ did dealloc", self.title);
 }
 
 - (void)didReceiveMemoryWarning {

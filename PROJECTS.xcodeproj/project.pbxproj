@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4DF1A823BBD9D31C6631B5F1 /* libPods-PROJECTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 950D2F99677C88AC4CC065BD /* libPods-PROJECTS.a */; };
+		9E850BD91F57AB610004332E /* ColorConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BD81F57AB610004332E /* ColorConsts.m */; };
+		9E850BDC1F57ACD40004332E /* MeasureConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BDB1F57ACD40004332E /* MeasureConsts.m */; };
+		9E850BE31F57EA7A0004332E /* BaseNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BE21F57EA7A0004332E /* BaseNetwork.m */; };
+		9E850BE61F57EB4A0004332E /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BE51F57EB4A0004332E /* NetworkManager.m */; };
+		9E850BE91F57F3E20004332E /* TestNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BE81F57F3E20004332E /* TestNetwork.m */; };
 		9EC258B91F565F250078F554 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC258B81F565F250078F554 /* main.m */; };
 		9EC258BC1F565F250078F554 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC258BB1F565F250078F554 /* AppDelegate.m */; };
 		9EC258C41F565F250078F554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC258C31F565F250078F554 /* Assets.xcassets */; };
@@ -17,6 +22,8 @@
 		9EC258F11F56861F0078F554 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC258F01F56861F0078F554 /* NavigationController.m */; };
 		9EC258F71F568A430078F554 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC258F61F568A430078F554 /* BaseViewController.m */; };
 		9EC258FA1F568BEA0078F554 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC258F91F568BEA0078F554 /* ViewController.m */; };
+		9EC259021F56A36D0078F554 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC259011F56A36D0078F554 /* UIImage+Color.m */; };
+		9EC259051F56AFDD0078F554 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC259041F56AFDD0078F554 /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,17 @@
 		146634C452E7D762B9BD57B3 /* Pods-PROJECTS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJECTS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PROJECTS/Pods-PROJECTS.debug.xcconfig"; sourceTree = "<group>"; };
 		4D3D4E91FD5E1A4C5B178941 /* Pods-PROJECTS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJECTS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PROJECTS/Pods-PROJECTS.release.xcconfig"; sourceTree = "<group>"; };
 		950D2F99677C88AC4CC065BD /* libPods-PROJECTS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PROJECTS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E850BD71F57AB610004332E /* ColorConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConsts.h; sourceTree = "<group>"; };
+		9E850BD81F57AB610004332E /* ColorConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConsts.m; sourceTree = "<group>"; };
+		9E850BDA1F57ACD40004332E /* MeasureConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureConsts.h; sourceTree = "<group>"; };
+		9E850BDB1F57ACD40004332E /* MeasureConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasureConsts.m; sourceTree = "<group>"; };
+		9E850BE11F57EA7A0004332E /* BaseNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetwork.h; sourceTree = "<group>"; };
+		9E850BE21F57EA7A0004332E /* BaseNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetwork.m; sourceTree = "<group>"; };
+		9E850BE41F57EB4A0004332E /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		9E850BE51F57EB4A0004332E /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		9E850BE71F57F3E20004332E /* TestNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNetwork.h; sourceTree = "<group>"; };
+		9E850BE81F57F3E20004332E /* TestNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNetwork.m; sourceTree = "<group>"; };
+		9E850BEA1F57FED90004332E /* Networks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networks.h; sourceTree = "<group>"; };
 		9EC258B41F565F250078F554 /* PROJECTS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PROJECTS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC258B81F565F250078F554 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EC258BA1F565F250078F554 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +79,12 @@
 		9EC258F61F568A430078F554 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		9EC258F81F568BEA0078F554 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9EC258F91F568BEA0078F554 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9EC258FC1F56A26E0078F554 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		9EC259001F56A36D0078F554 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		9EC259011F56A36D0078F554 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		9EC259031F56AFDD0078F554 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		9EC259041F56AFDD0078F554 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		9EC259091F56C2CD0078F554 /* Consts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consts.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +130,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9E850BDD1F57E4FE0004332E /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				9E850BEA1F57FED90004332E /* Networks.h */,
+				9E850BE41F57EB4A0004332E /* NetworkManager.h */,
+				9E850BE51F57EB4A0004332E /* NetworkManager.m */,
+				9E850BE11F57EA7A0004332E /* BaseNetwork.h */,
+				9E850BE21F57EA7A0004332E /* BaseNetwork.m */,
+				9E850BE71F57F3E20004332E /* TestNetwork.h */,
+				9E850BE81F57F3E20004332E /* TestNetwork.m */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
 		9EC258AB1F565F250078F554 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +169,9 @@
 		9EC258B61F565F250078F554 /* PROJECTS */ = {
 			isa = PBXGroup;
 			children = (
+				9E850BDD1F57E4FE0004332E /* Networks */,
+				9EC259061F56C26D0078F554 /* Consts */,
+				9EC258FB1F56A1990078F554 /* Tools */,
 				9EC258EA1F5682170078F554 /* RootBasic */,
 				9EC258BA1F565F250078F554 /* AppDelegate.h */,
 				9EC258BB1F565F250078F554 /* AppDelegate.m */,
@@ -181,6 +222,30 @@
 				9EC258F91F568BEA0078F554 /* ViewController.m */,
 			);
 			path = RootBasic;
+			sourceTree = "<group>";
+		};
+		9EC258FB1F56A1990078F554 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9EC258FC1F56A26E0078F554 /* Tools.h */,
+				9EC259001F56A36D0078F554 /* UIImage+Color.h */,
+				9EC259011F56A36D0078F554 /* UIImage+Color.m */,
+				9EC259031F56AFDD0078F554 /* UIColor+Hex.h */,
+				9EC259041F56AFDD0078F554 /* UIColor+Hex.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		9EC259061F56C26D0078F554 /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				9EC259091F56C2CD0078F554 /* Consts.h */,
+				9E850BD71F57AB610004332E /* ColorConsts.h */,
+				9E850BD81F57AB610004332E /* ColorConsts.m */,
+				9E850BDA1F57ACD40004332E /* MeasureConsts.h */,
+				9E850BDB1F57ACD40004332E /* MeasureConsts.m */,
+			);
+			path = Consts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,10 +430,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E850BDC1F57ACD40004332E /* MeasureConsts.m in Sources */,
+				9E850BD91F57AB610004332E /* ColorConsts.m in Sources */,
+				9E850BE61F57EB4A0004332E /* NetworkManager.m in Sources */,
 				9EC258FA1F568BEA0078F554 /* ViewController.m in Sources */,
+				9E850BE91F57F3E20004332E /* TestNetwork.m in Sources */,
 				9EC258ED1F5683030078F554 /* TabBarController.m in Sources */,
+				9E850BE31F57EA7A0004332E /* BaseNetwork.m in Sources */,
+				9EC259021F56A36D0078F554 /* UIImage+Color.m in Sources */,
 				9EC258F71F568A430078F554 /* BaseViewController.m in Sources */,
 				9EC258F11F56861F0078F554 /* NavigationController.m in Sources */,
+				9EC259051F56AFDD0078F554 /* UIColor+Hex.m in Sources */,
 				9EC258BC1F565F250078F554 /* AppDelegate.m in Sources */,
 				9EC258B91F565F250078F554 /* main.m in Sources */,
 			);
@@ -595,6 +667,7 @@
 				9EC258E31F565F250078F554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EC258E41F565F250078F554 /* Build configuration list for PBXNativeTarget "PROJECTSTests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +676,7 @@
 				9EC258E61F565F250078F554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EC258E71F565F250078F554 /* Build configuration list for PBXNativeTarget "PROJECTSUITests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +685,7 @@
 				9EC258E91F565F250078F554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
