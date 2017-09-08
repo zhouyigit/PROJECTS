@@ -8,4 +8,6 @@
 
 @interface ViewController : BaseViewController
 
+@property(strong, nonatomic)NSMutableArray *wellBeings;
+
 @end

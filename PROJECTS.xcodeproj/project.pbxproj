@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4DF1A823BBD9D31C6631B5F1 /* libPods-PROJECTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 950D2F99677C88AC4CC065BD /* libPods-PROJECTS.a */; };
+		9E36A2431F5D27B2009BF875 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A2421F5D27B2009BF875 /* TableViewController.m */; };
+		9E36A2491F5D4677009BF875 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A2481F5D4677009BF875 /* BaseModel.m */; };
+		9E36A24C1F5D47E3009BF875 /* WellBeingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A24B1F5D47E3009BF875 /* WellBeingModel.m */; };
+		9E36A2511F5D4C93009BF875 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A2501F5D4C93009BF875 /* BaseTableViewCell.m */; };
+		9E36A2541F5D4CD2009BF875 /* WellBeingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A2531F5D4CD2009BF875 /* WellBeingCell.m */; };
 		9E850BD91F57AB610004332E /* ColorConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BD81F57AB610004332E /* ColorConsts.m */; };
 		9E850BDC1F57ACD40004332E /* MeasureConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BDB1F57ACD40004332E /* MeasureConsts.m */; };
 		9E850BE31F57EA7A0004332E /* BaseNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BE21F57EA7A0004332E /* BaseNetwork.m */; };
@@ -47,6 +52,19 @@
 		146634C452E7D762B9BD57B3 /* Pods-PROJECTS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJECTS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PROJECTS/Pods-PROJECTS.debug.xcconfig"; sourceTree = "<group>"; };
 		4D3D4E91FD5E1A4C5B178941 /* Pods-PROJECTS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJECTS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PROJECTS/Pods-PROJECTS.release.xcconfig"; sourceTree = "<group>"; };
 		950D2F99677C88AC4CC065BD /* libPods-PROJECTS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PROJECTS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E36A2411F5D27B2009BF875 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		9E36A2421F5D27B2009BF875 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		9E36A2441F5D2C29009BF875 /* Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
+		9E36A2461F5D38D4009BF875 /* Models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
+		9E36A2471F5D4677009BF875 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		9E36A2481F5D4677009BF875 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		9E36A24A1F5D47E3009BF875 /* WellBeingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellBeingModel.h; sourceTree = "<group>"; };
+		9E36A24B1F5D47E3009BF875 /* WellBeingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellBeingModel.m; sourceTree = "<group>"; };
+		9E36A24E1F5D4C5D009BF875 /* Cells.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cells.h; sourceTree = "<group>"; };
+		9E36A24F1F5D4C93009BF875 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		9E36A2501F5D4C93009BF875 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		9E36A2521F5D4CD2009BF875 /* WellBeingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellBeingCell.h; sourceTree = "<group>"; };
+		9E36A2531F5D4CD2009BF875 /* WellBeingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellBeingCell.m; sourceTree = "<group>"; };
 		9E850BD71F57AB610004332E /* ColorConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConsts.h; sourceTree = "<group>"; };
 		9E850BD81F57AB610004332E /* ColorConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConsts.m; sourceTree = "<group>"; };
 		9E850BDA1F57ACD40004332E /* MeasureConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureConsts.h; sourceTree = "<group>"; };
@@ -130,6 +148,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9E36A2401F5D276D009BF875 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9E36A2441F5D2C29009BF875 /* Tests.h */,
+				9E36A2411F5D27B2009BF875 /* TableViewController.h */,
+				9E36A2421F5D27B2009BF875 /* TableViewController.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		9E36A2451F5D38C2009BF875 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E36A2461F5D38D4009BF875 /* Models.h */,
+				9E36A2471F5D4677009BF875 /* BaseModel.h */,
+				9E36A2481F5D4677009BF875 /* BaseModel.m */,
+				9E36A24A1F5D47E3009BF875 /* WellBeingModel.h */,
+				9E36A24B1F5D47E3009BF875 /* WellBeingModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E36A24D1F5D4C47009BF875 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9E36A24E1F5D4C5D009BF875 /* Cells.h */,
+				9E36A24F1F5D4C93009BF875 /* BaseTableViewCell.h */,
+				9E36A2501F5D4C93009BF875 /* BaseTableViewCell.m */,
+				9E36A2521F5D4CD2009BF875 /* WellBeingCell.h */,
+				9E36A2531F5D4CD2009BF875 /* WellBeingCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		9E850BDD1F57E4FE0004332E /* Networks */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +221,9 @@
 		9EC258B61F565F250078F554 /* PROJECTS */ = {
 			isa = PBXGroup;
 			children = (
+				9E36A24D1F5D4C47009BF875 /* Cells */,
+				9E36A2451F5D38C2009BF875 /* Models */,
+				9E36A2401F5D276D009BF875 /* Tests */,
 				9E850BDD1F57E4FE0004332E /* Networks */,
 				9EC259061F56C26D0078F554 /* Consts */,
 				9EC258FB1F56A1990078F554 /* Tools */,
@@ -433,8 +488,13 @@
 				9E850BDC1F57ACD40004332E /* MeasureConsts.m in Sources */,
 				9E850BD91F57AB610004332E /* ColorConsts.m in Sources */,
 				9E850BE61F57EB4A0004332E /* NetworkManager.m in Sources */,
+				9E36A2491F5D4677009BF875 /* BaseModel.m in Sources */,
+				9E36A2511F5D4C93009BF875 /* BaseTableViewCell.m in Sources */,
 				9EC258FA1F568BEA0078F554 /* ViewController.m in Sources */,
+				9E36A24C1F5D47E3009BF875 /* WellBeingModel.m in Sources */,
+				9E36A2541F5D4CD2009BF875 /* WellBeingCell.m in Sources */,
 				9E850BE91F57F3E20004332E /* TestNetwork.m in Sources */,
+				9E36A2431F5D27B2009BF875 /* TableViewController.m in Sources */,
 				9EC258ED1F5683030078F554 /* TabBarController.m in Sources */,
 				9E850BE31F57EA7A0004332E /* BaseNetwork.m in Sources */,
 				9EC259021F56A36D0078F554 /* UIImage+Color.m in Sources */,

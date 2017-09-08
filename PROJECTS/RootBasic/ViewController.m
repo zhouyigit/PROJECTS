@@ -16,7 +16,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    CGRect frame = CGRectMake(0, 64, 64, 44);
+    CGRect frame = CGRectMake(0, 400, 64, 44);
     UIButton *push = [[UIButton alloc] initWithFrame:frame];
     [push setTitle:@"push" forState:UIControlStateNormal];
 //    UIImage *bgImage = [UIImage imageWithHexColor:0xfff000 size:CGSizeMake(64, 44) cornerRadius:22];
@@ -36,14 +36,14 @@
     [self.view addSubview:imageView];
     
     UIButton *wellBeing = [[UIButton alloc] init];
-    [wellBeing setTitle:@"wellBeing" forState:UIControlStateNormal];
+    [wellBeing setTitle:@"wellBeing 点一次拉10条" forState:UIControlStateNormal];
     wellBeing.backgroundColor = [UIColor colorWithHex:0x345234];
     [wellBeing addTarget:self action:@selector(wellBeing) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:wellBeing];
     [wellBeing mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(push.mas_right).offset(msLeftRightMargin);
-        make.top.offset(164);
-        make.width.offset(100);
+        make.top.equalTo(imageView.mas_bottom);
+        make.width.offset(200);
         make.height.offset(44);
     }];
     
@@ -58,6 +58,17 @@
         make.width.offset(100);
         make.height.offset(44);
     }];
+    
+    UITextField *textField = [[UITextField alloc] init];
+    [self.view addSubview:textField];
+    [textField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.offset(0);
+        make.bottom.offset(-49);
+        make.width.offset(100);
+        make.height.offset(44);
+    }];
+    
+    _wellBeings = [NSMutableArray arrayWithCapacity:0];
 }
 
 -(void)wellBeing
@@ -70,8 +81,10 @@
         
         if (!error) {
             //该网络事务是成功完成的
-            if (responseObject[@"error"] == 0) {//这个判断由返回的json串定义
+            NSNumber *errCode = responseObject[@"error"];
+            if (errCode.boolValue == NO) {//这个判断由返回的json串定义
                 //获取数据成功（获取数据的成功或失败 与 网络事务的成功失败 无关）
+                [weak.wellBeings addObjectsFromArray:[WellBeingModel mj_objectArrayWithKeyValuesArray:responseObject[@"results"]]];
             }
         } else {
             //该网络事务失败
@@ -120,11 +133,15 @@
 
 -(void)pushAction:(UIButton*)button
 {
-    ViewController *vc = [[ViewController alloc] init];
-    static int i = 0;
-    vc.title = [NSString stringWithFormat:@"%d", i];
-    i++;
-    [self.navigationController pushViewController:vc animated:YES];
+//    ViewController *vc = [[ViewController alloc] init];
+//    static int i = 0;
+//    vc.title = [NSString stringWithFormat:@"%d", i];
+//    i++;
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+    TableViewController *tvc = [[TableViewController alloc] initWithDataSource:_wellBeings];
+    [self.navigationController pushViewController:tvc animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

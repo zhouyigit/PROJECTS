@@ -10,7 +10,10 @@
 
 +(NSURLSessionDataTask *)getWellBeingCompletionHandler:(void (^)(NSURLSessionDataTask * _Nullable, id _Nullable, NSError * _Nullable))handler
 {
-    return [[self class] GET:@"福利/10/1" parameters:nil completionHandler:handler];
+    static int day = 0;
+    day++;
+    NSString *path = [NSString stringWithFormat:@"福利/10/%d", day];
+    return [[self class] GET:path parameters:nil completionHandler:handler];
 }
 
 +(NSURLSessionDataTask *)testLocalParameters:(NSDictionary *)parameters completionHandler:(void (^)(NSURLSessionDataTask * _Nullable, id _Nullable, NSError * _Nullable))handler
