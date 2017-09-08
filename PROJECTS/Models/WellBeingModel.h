@@ -28,5 +28,6 @@
 @property(strong, nonatomic) NSString *url;
 @property(strong, nonatomic) NSString *used;
 @property(strong, nonatomic) NSString *who;
+@property(assign, nonatomic) CGFloat imageHeight;
 
 @end

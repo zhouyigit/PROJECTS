@@ -25,4 +25,9 @@
     _indexPath = indexPath;
 }
 
+-(void)dealloc
+{
+    
+}
+
 @end

@@ -33,6 +33,7 @@
     _tableView.delegate = self;
     [_tableView registerClass:[WellBeingCell class] forCellReuseIdentifier:@"cell"];
     _tableView.estimatedRowHeight = 44;
+    _tableView.decelerationRate = UIScrollViewDecelerationRateNormal;//暴力滑动时reloadRowsAtIndexPaths:越狱
     [self.view addSubview:_tableView];
     
 }
@@ -92,33 +93,84 @@
     if (decelerate) {
         //
     } else {
-        [self reloadNeedReloadIndexPaths];
+        _tableViewScrolling = NO;
+//        [self reloadNeedReloadIndexPaths];
     }
 }
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    [self reloadNeedReloadIndexPaths];
+    _tableViewScrolling = NO;
+//    [self reloadNeedReloadIndexPaths];
 }
 
 -(void)reloadNeedReloadIndexPaths
 {
     if (_needReloadIndexPaths.count > 0) {
-        [_tableView reloadRowsAtIndexPaths:_needReloadIndexPaths withRowAnimation:UITableViewRowAnimationNone];
+        
+        NSMutableArray *arr = [NSMutableArray arrayWithCapacity:0];
+        NSIndexPath *top = _tableView.indexPathsForVisibleRows.firstObject;
+        for (NSIndexPath *nsip in _needReloadIndexPaths) {
+            if (nsip.section == top.section && nsip.row >= top.row) {
+                [arr addObject:nsip];
+                WellBeingModel *model = _dataSource[nsip.row];
+                model.height = model.imageHeight;
+            }
+        }
+        
+        if (arr.count > 0) {
+            @try {
+                [_tableView beginUpdates];
+                [_tableView reloadRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationNone];
+                [_tableView endUpdates];
+                [_needReloadIndexPaths removeObjectsInArray:arr];
+                [_hadReloadIndexPaths addObjectsFromArray:arr];
+            } @catch (NSException *exception) {
+                if (!_showError) {
+                    _showError = YES;
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ERROR" message:exception.description delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+                    [alert show];
+                }
+            } @finally {
+                
+            }
+        }
+        
     }
-    [_needReloadIndexPaths removeAllObjects];
-    _tableViewScrolling = NO;
+    
+    
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    _showError = NO;
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(void)wellBeingCellNeedReloadAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     if (!_needReloadIndexPaths) {
         _needReloadIndexPaths = [NSMutableArray arrayWithCapacity:0];
     }
-    [_needReloadIndexPaths addObject:indexPath];
-    if (_tableViewScrolling == NO) {
-        [self reloadNeedReloadIndexPaths];
+    if (!_hadReloadIndexPaths) {
+        _hadReloadIndexPaths = [NSMutableArray arrayWithCapacity:0];
     }
+    BOOL contain = NO;
+    for (NSIndexPath *nsip in _needReloadIndexPaths) {
+        if (nsip.section == indexPath.section && nsip.row == indexPath.row) {
+            contain = YES;
+            break;
+        }
+    }
+    
+    if (!contain) {
+        [_needReloadIndexPaths addObject:indexPath];
+    }
+    
+//    if (_tableViewScrolling == NO) {
+        [self reloadNeedReloadIndexPaths];
+//    }
 }
 
 - (void)didReceiveMemoryWarning {

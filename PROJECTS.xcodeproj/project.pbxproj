@@ -29,6 +29,7 @@
 		9EC258FA1F568BEA0078F554 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC258F91F568BEA0078F554 /* ViewController.m */; };
 		9EC259021F56A36D0078F554 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC259011F56A36D0078F554 /* UIImage+Color.m */; };
 		9EC259051F56AFDD0078F554 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC259041F56AFDD0078F554 /* UIColor+Hex.m */; };
+		9EE0302B1F6263490026C224 /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0302A1F6263490026C224 /* NavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		9EC259031F56AFDD0078F554 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		9EC259041F56AFDD0078F554 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		9EC259091F56C2CD0078F554 /* Consts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consts.h; sourceTree = "<group>"; };
+		9EE030291F6263490026C224 /* NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
+		9EE0302A1F6263490026C224 /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +272,8 @@
 			children = (
 				9EC258EB1F5683030078F554 /* TabBarController.h */,
 				9EC258EC1F5683030078F554 /* TabBarController.m */,
+				9EE030291F6263490026C224 /* NavigationBar.h */,
+				9EE0302A1F6263490026C224 /* NavigationBar.m */,
 				9EC258EF1F56861F0078F554 /* NavigationController.h */,
 				9EC258F01F56861F0078F554 /* NavigationController.m */,
 				9EC258F51F568A430078F554 /* BaseViewController.h */,
@@ -373,6 +378,7 @@
 				TargetAttributes = {
 					9EC258B31F565F250078F554 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = PKX8H4TRR4;
 						ProvisioningStyle = Automatic;
 					};
 					9EC258CC1F565F250078F554 = {
@@ -494,6 +500,7 @@
 				9E36A24C1F5D47E3009BF875 /* WellBeingModel.m in Sources */,
 				9E36A2541F5D4CD2009BF875 /* WellBeingCell.m in Sources */,
 				9E850BE91F57F3E20004332E /* TestNetwork.m in Sources */,
+				9EE0302B1F6263490026C224 /* NavigationBar.m in Sources */,
 				9E36A2431F5D27B2009BF875 /* TableViewController.m in Sources */,
 				9EC258ED1F5683030078F554 /* TabBarController.m in Sources */,
 				9E850BE31F57EA7A0004332E /* BaseNetwork.m in Sources */,
@@ -636,6 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = PKX8H4TRR4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PROJECTS/PROJECTS.pch;
 				INFOPLIST_FILE = PROJECTS/Info.plist;
@@ -652,6 +660,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = PKX8H4TRR4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PROJECTS/PROJECTS.pch;
 				INFOPLIST_FILE = PROJECTS/Info.plist;
