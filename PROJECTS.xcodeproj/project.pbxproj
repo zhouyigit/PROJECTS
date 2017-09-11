@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4DF1A823BBD9D31C6631B5F1 /* libPods-PROJECTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 950D2F99677C88AC4CC065BD /* libPods-PROJECTS.a */; };
+		9E0197C81F663CC10064343B /* TopTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197C71F663CC10064343B /* TopTabBarViewController.m */; };
+		9E0197CE1F6667BC0064343B /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197CD1F6667BC0064343B /* BaseTableViewController.m */; };
+		9E0197D21F666A9F0064343B /* WechatGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197D11F666A9F0064343B /* WechatGroupViewController.m */; };
+		9E0197D51F6677830064343B /* RefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197D41F6677830064343B /* RefreshTableViewController.m */; };
+		9E0197D81F6678910064343B /* JoinedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197D71F6678910064343B /* JoinedTableViewController.m */; };
+		9E0197DB1F667C1D0064343B /* ManagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197DA1F667C1D0064343B /* ManagedTableViewController.m */; };
+		9E0197DE1F6682AB0064343B /* WxGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197DD1F6682AB0064343B /* WxGroupModel.m */; };
+		9E0197E51F66850B0064343B /* ARDBConfigBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197E21F66850B0064343B /* ARDBConfigBase.m */; };
+		9E0197E61F66850B0064343B /* DBConfigLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197E41F66850B0064343B /* DBConfigLogic.m */; };
+		9E0197EB1F6688E60064343B /* BaseSqlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197E81F6688E60064343B /* BaseSqlManager.m */; };
+		9E0197EC1F6688E60064343B /* BaseSqlWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197EA1F6688E60064343B /* BaseSqlWork.m */; };
+		9E0197EF1F668AD80064343B /* WxGroupSqlWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197EE1F668AD80064343B /* WxGroupSqlWork.m */; };
 		9E36A2431F5D27B2009BF875 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A2421F5D27B2009BF875 /* TableViewController.m */; };
 		9E36A2491F5D4677009BF875 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A2481F5D4677009BF875 /* BaseModel.m */; };
 		9E36A24C1F5D47E3009BF875 /* WellBeingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A24B1F5D47E3009BF875 /* WellBeingModel.m */; };
@@ -53,6 +65,32 @@
 		146634C452E7D762B9BD57B3 /* Pods-PROJECTS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJECTS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PROJECTS/Pods-PROJECTS.debug.xcconfig"; sourceTree = "<group>"; };
 		4D3D4E91FD5E1A4C5B178941 /* Pods-PROJECTS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJECTS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PROJECTS/Pods-PROJECTS.release.xcconfig"; sourceTree = "<group>"; };
 		950D2F99677C88AC4CC065BD /* libPods-PROJECTS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PROJECTS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E0197C51F6637D00064343B /* CommonViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViews.h; sourceTree = "<group>"; };
+		9E0197C61F663CC10064343B /* TopTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTabBarViewController.h; sourceTree = "<group>"; };
+		9E0197C71F663CC10064343B /* TopTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopTabBarViewController.m; sourceTree = "<group>"; };
+		9E0197CC1F6667BC0064343B /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		9E0197CD1F6667BC0064343B /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		9E0197D01F666A9F0064343B /* WechatGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatGroupViewController.h; sourceTree = "<group>"; };
+		9E0197D11F666A9F0064343B /* WechatGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WechatGroupViewController.m; sourceTree = "<group>"; };
+		9E0197D31F6677830064343B /* RefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshTableViewController.h; sourceTree = "<group>"; };
+		9E0197D41F6677830064343B /* RefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshTableViewController.m; sourceTree = "<group>"; };
+		9E0197D61F6678910064343B /* JoinedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinedTableViewController.h; sourceTree = "<group>"; };
+		9E0197D71F6678910064343B /* JoinedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinedTableViewController.m; sourceTree = "<group>"; };
+		9E0197D91F667C1D0064343B /* ManagedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedTableViewController.h; sourceTree = "<group>"; };
+		9E0197DA1F667C1D0064343B /* ManagedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedTableViewController.m; sourceTree = "<group>"; };
+		9E0197DC1F6682AB0064343B /* WxGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxGroupModel.h; sourceTree = "<group>"; };
+		9E0197DD1F6682AB0064343B /* WxGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WxGroupModel.m; sourceTree = "<group>"; };
+		9E0197E11F66850B0064343B /* ARDBConfigBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDBConfigBase.h; sourceTree = "<group>"; };
+		9E0197E21F66850B0064343B /* ARDBConfigBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDBConfigBase.m; sourceTree = "<group>"; };
+		9E0197E31F66850B0064343B /* DBConfigLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConfigLogic.h; sourceTree = "<group>"; };
+		9E0197E41F66850B0064343B /* DBConfigLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBConfigLogic.m; sourceTree = "<group>"; };
+		9E0197E71F6688E60064343B /* BaseSqlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSqlManager.h; sourceTree = "<group>"; };
+		9E0197E81F6688E60064343B /* BaseSqlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSqlManager.m; sourceTree = "<group>"; };
+		9E0197E91F6688E60064343B /* BaseSqlWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSqlWork.h; sourceTree = "<group>"; };
+		9E0197EA1F6688E60064343B /* BaseSqlWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSqlWork.m; sourceTree = "<group>"; };
+		9E0197ED1F668AD80064343B /* WxGroupSqlWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxGroupSqlWork.h; sourceTree = "<group>"; };
+		9E0197EE1F668AD80064343B /* WxGroupSqlWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WxGroupSqlWork.m; sourceTree = "<group>"; };
+		9E0197F01F668AFD0064343B /* DBWorks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBWorks.h; sourceTree = "<group>"; };
 		9E36A2411F5D27B2009BF875 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		9E36A2421F5D27B2009BF875 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		9E36A2441F5D2C29009BF875 /* Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
@@ -151,6 +189,57 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9E0197C11F662BBD0064343B /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				9E0197C51F6637D00064343B /* CommonViews.h */,
+				9E0197C61F663CC10064343B /* TopTabBarViewController.h */,
+				9E0197C71F663CC10064343B /* TopTabBarViewController.m */,
+				9E0197D31F6677830064343B /* RefreshTableViewController.h */,
+				9E0197D41F6677830064343B /* RefreshTableViewController.m */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		9E0197CF1F666A110064343B /* Tab1 */ = {
+			isa = PBXGroup;
+			children = (
+				9E0197D01F666A9F0064343B /* WechatGroupViewController.h */,
+				9E0197D11F666A9F0064343B /* WechatGroupViewController.m */,
+				9E0197D61F6678910064343B /* JoinedTableViewController.h */,
+				9E0197D71F6678910064343B /* JoinedTableViewController.m */,
+				9E0197D91F667C1D0064343B /* ManagedTableViewController.h */,
+				9E0197DA1F667C1D0064343B /* ManagedTableViewController.m */,
+			);
+			path = Tab1;
+			sourceTree = "<group>";
+		};
+		9E0197DF1F6684FC0064343B /* DBworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E0197F01F668AFD0064343B /* DBWorks.h */,
+				9E0197E01F66850B0064343B /* ARDBConfig */,
+				9E0197E71F6688E60064343B /* BaseSqlManager.h */,
+				9E0197E81F6688E60064343B /* BaseSqlManager.m */,
+				9E0197E91F6688E60064343B /* BaseSqlWork.h */,
+				9E0197EA1F6688E60064343B /* BaseSqlWork.m */,
+				9E0197ED1F668AD80064343B /* WxGroupSqlWork.h */,
+				9E0197EE1F668AD80064343B /* WxGroupSqlWork.m */,
+			);
+			path = DBworks;
+			sourceTree = "<group>";
+		};
+		9E0197E01F66850B0064343B /* ARDBConfig */ = {
+			isa = PBXGroup;
+			children = (
+				9E0197E11F66850B0064343B /* ARDBConfigBase.h */,
+				9E0197E21F66850B0064343B /* ARDBConfigBase.m */,
+				9E0197E31F66850B0064343B /* DBConfigLogic.h */,
+				9E0197E41F66850B0064343B /* DBConfigLogic.m */,
+			);
+			path = ARDBConfig;
+			sourceTree = "<group>";
+		};
 		9E36A2401F5D276D009BF875 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +258,8 @@
 				9E36A2481F5D4677009BF875 /* BaseModel.m */,
 				9E36A24A1F5D47E3009BF875 /* WellBeingModel.h */,
 				9E36A24B1F5D47E3009BF875 /* WellBeingModel.m */,
+				9E0197DC1F6682AB0064343B /* WxGroupModel.h */,
+				9E0197DD1F6682AB0064343B /* WxGroupModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -227,10 +318,13 @@
 				9E36A24D1F5D4C47009BF875 /* Cells */,
 				9E36A2451F5D38C2009BF875 /* Models */,
 				9E36A2401F5D276D009BF875 /* Tests */,
+				9E0197DF1F6684FC0064343B /* DBworks */,
 				9E850BDD1F57E4FE0004332E /* Networks */,
 				9EC259061F56C26D0078F554 /* Consts */,
 				9EC258FB1F56A1990078F554 /* Tools */,
 				9EC258EA1F5682170078F554 /* RootBasic */,
+				9E0197C11F662BBD0064343B /* CommonViews */,
+				9E0197CF1F666A110064343B /* Tab1 */,
 				9EC258BA1F565F250078F554 /* AppDelegate.h */,
 				9EC258BB1F565F250078F554 /* AppDelegate.m */,
 				9EC258EE1F5684360078F554 /* PROJECTS.pch */,
@@ -278,6 +372,8 @@
 				9EC258F01F56861F0078F554 /* NavigationController.m */,
 				9EC258F51F568A430078F554 /* BaseViewController.h */,
 				9EC258F61F568A430078F554 /* BaseViewController.m */,
+				9E0197CC1F6667BC0064343B /* BaseTableViewController.h */,
+				9E0197CD1F6667BC0064343B /* BaseTableViewController.m */,
 				9EC258F81F568BEA0078F554 /* ViewController.h */,
 				9EC258F91F568BEA0078F554 /* ViewController.m */,
 			);
@@ -378,8 +474,7 @@
 				TargetAttributes = {
 					9EC258B31F565F250078F554 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = PKX8H4TRR4;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					9EC258CC1F565F250078F554 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -497,16 +592,28 @@
 				9E36A2491F5D4677009BF875 /* BaseModel.m in Sources */,
 				9E36A2511F5D4C93009BF875 /* BaseTableViewCell.m in Sources */,
 				9EC258FA1F568BEA0078F554 /* ViewController.m in Sources */,
+				9E0197DE1F6682AB0064343B /* WxGroupModel.m in Sources */,
+				9E0197D81F6678910064343B /* JoinedTableViewController.m in Sources */,
+				9E0197EC1F6688E60064343B /* BaseSqlWork.m in Sources */,
+				9E0197DB1F667C1D0064343B /* ManagedTableViewController.m in Sources */,
 				9E36A24C1F5D47E3009BF875 /* WellBeingModel.m in Sources */,
+				9E0197EF1F668AD80064343B /* WxGroupSqlWork.m in Sources */,
+				9E0197D51F6677830064343B /* RefreshTableViewController.m in Sources */,
 				9E36A2541F5D4CD2009BF875 /* WellBeingCell.m in Sources */,
 				9E850BE91F57F3E20004332E /* TestNetwork.m in Sources */,
 				9EE0302B1F6263490026C224 /* NavigationBar.m in Sources */,
+				9E0197CE1F6667BC0064343B /* BaseTableViewController.m in Sources */,
 				9E36A2431F5D27B2009BF875 /* TableViewController.m in Sources */,
 				9EC258ED1F5683030078F554 /* TabBarController.m in Sources */,
+				9E0197EB1F6688E60064343B /* BaseSqlManager.m in Sources */,
 				9E850BE31F57EA7A0004332E /* BaseNetwork.m in Sources */,
+				9E0197E51F66850B0064343B /* ARDBConfigBase.m in Sources */,
 				9EC259021F56A36D0078F554 /* UIImage+Color.m in Sources */,
+				9E0197E61F66850B0064343B /* DBConfigLogic.m in Sources */,
 				9EC258F71F568A430078F554 /* BaseViewController.m in Sources */,
 				9EC258F11F56861F0078F554 /* NavigationController.m in Sources */,
+				9E0197C81F663CC10064343B /* TopTabBarViewController.m in Sources */,
+				9E0197D21F666A9F0064343B /* WechatGroupViewController.m in Sources */,
 				9EC259051F56AFDD0078F554 /* UIColor+Hex.m in Sources */,
 				9EC258BC1F565F250078F554 /* AppDelegate.m in Sources */,
 				9EC258B91F565F250078F554 /* main.m in Sources */,
@@ -643,7 +750,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = PKX8H4TRR4;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PROJECTS/PROJECTS.pch;
 				INFOPLIST_FILE = PROJECTS/Info.plist;
@@ -651,6 +758,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zy.PROJECTS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -660,7 +768,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = PKX8H4TRR4;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PROJECTS/PROJECTS.pch;
 				INFOPLIST_FILE = PROJECTS/Info.plist;
@@ -668,6 +776,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zy.PROJECTS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

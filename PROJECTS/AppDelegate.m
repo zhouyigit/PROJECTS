@@ -15,6 +15,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self dbConfig];
+    
     TabBarController *tabc = [[TabBarController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = tabc;
@@ -22,6 +25,25 @@
     return YES;
 }
 
+-(void)dbConfig
+{
+    DBConfigLogic *dbConfigLogic = [[DBConfigLogic alloc] init];
+    //    dbConfigLogic.allowDowngrade = YES; //是否允许数据库降级，默认不允许。
+    BOOL checkResult = [dbConfigLogic checkDatabase:LOCAL_MAIN_DB_PATH newVersion:dbConfigLogic.dbVersion];
+    if (!checkResult) {
+        
+        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                            message:@"数据库初始化失败，不能继续加载，请彻底关闭程序后再次尝试。"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"确定"
+                                                  otherButtonTitles:nil, nil];
+        [alertview show];
+        
+    } else {
+        NSLog(@"check db success.");
+        NSLog(@"\n******** [App Path] *******\n%@\n***************************", NSHomeDirectory());
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

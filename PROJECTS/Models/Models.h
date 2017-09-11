@@ -8,5 +8,6 @@
 #define Models_h
 
 #import "WellBeingModel.h"
+#import "WxGroupModel.h"
 
 #endif /* Models_h */

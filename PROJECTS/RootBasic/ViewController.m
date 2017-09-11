@@ -54,7 +54,7 @@
     [self.view addSubview:localTest];
     [localTest mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(push.mas_right).offset(msLeftRightMargin);
-        make.top.offset(100);
+        make.bottom.offset(0);
         make.width.offset(100);
         make.height.offset(44);
     }];
@@ -140,7 +140,7 @@
 //    [self.navigationController pushViewController:vc animated:YES];
     
     TableViewController *tvc = [[TableViewController alloc] initWithDataSource:_wellBeings];
-    [self.navigationController pushViewController:tvc animated:YES];
+    [NavC pushViewController:tvc animated:YES];
     
 }
 

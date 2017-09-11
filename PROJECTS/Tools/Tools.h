@@ -9,9 +9,11 @@
 
 /** 一像素 */
 #define OnePX (1/[UIScreen mainScreen].scale)
+/** 屏幕宽度 */
+#define WIDTH [UIScreen mainScreen].bounds.size.width
 
 /** 导航控制器 **/
-#define NavC ((NavigationController*))
+#define NavC ((NavigationController*)TabC.selectedViewController)
 #define TabC ((TabBarController*)[UIApplication sharedApplication].delegate.window.rootViewController)
 /** 字符串转换 **/
 #define StringFromAny(__C1__) [NSString stringWithFormat:@"%@",__C1__]
