@@ -25,6 +25,7 @@
 		9E36A24C1F5D47E3009BF875 /* WellBeingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A24B1F5D47E3009BF875 /* WellBeingModel.m */; };
 		9E36A2511F5D4C93009BF875 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A2501F5D4C93009BF875 /* BaseTableViewCell.m */; };
 		9E36A2541F5D4CD2009BF875 /* WellBeingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A2531F5D4CD2009BF875 /* WellBeingCell.m */; };
+		9E386CD91F67887B00E97EAE /* Thirds.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E386CD81F67887B00E97EAE /* Thirds.m */; };
 		9E850BD91F57AB610004332E /* ColorConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BD81F57AB610004332E /* ColorConsts.m */; };
 		9E850BDC1F57ACD40004332E /* MeasureConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BDB1F57ACD40004332E /* MeasureConsts.m */; };
 		9E850BE31F57EA7A0004332E /* BaseNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BE21F57EA7A0004332E /* BaseNetwork.m */; };
@@ -104,6 +105,8 @@
 		9E36A2501F5D4C93009BF875 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		9E36A2521F5D4CD2009BF875 /* WellBeingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellBeingCell.h; sourceTree = "<group>"; };
 		9E36A2531F5D4CD2009BF875 /* WellBeingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellBeingCell.m; sourceTree = "<group>"; };
+		9E386CD71F67887B00E97EAE /* Thirds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thirds.h; sourceTree = "<group>"; };
+		9E386CD81F67887B00E97EAE /* Thirds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thirds.m; sourceTree = "<group>"; };
 		9E850BD71F57AB610004332E /* ColorConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConsts.h; sourceTree = "<group>"; };
 		9E850BD81F57AB610004332E /* ColorConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConsts.m; sourceTree = "<group>"; };
 		9E850BDA1F57ACD40004332E /* MeasureConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureConsts.h; sourceTree = "<group>"; };
@@ -142,6 +145,7 @@
 		9EC259031F56AFDD0078F554 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		9EC259041F56AFDD0078F554 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		9EC259091F56C2CD0078F554 /* Consts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consts.h; sourceTree = "<group>"; };
+		9EDA43571F67845D00613A15 /* PROJECTS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PROJECTS.entitlements; sourceTree = "<group>"; };
 		9EE030291F6263490026C224 /* NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
 		9EE0302A1F6263490026C224 /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -276,6 +280,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		9E386CD31F67876200E97EAE /* Thirds */ = {
+			isa = PBXGroup;
+			children = (
+				9E386CD71F67887B00E97EAE /* Thirds.h */,
+				9E386CD81F67887B00E97EAE /* Thirds.m */,
+			);
+			path = Thirds;
+			sourceTree = "<group>";
+		};
 		9E850BDD1F57E4FE0004332E /* Networks */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +328,7 @@
 		9EC258B61F565F250078F554 /* PROJECTS */ = {
 			isa = PBXGroup;
 			children = (
+				9EDA43571F67845D00613A15 /* PROJECTS.entitlements */,
 				9E36A24D1F5D4C47009BF875 /* Cells */,
 				9E36A2451F5D38C2009BF875 /* Models */,
 				9E36A2401F5D276D009BF875 /* Tests */,
@@ -322,6 +336,7 @@
 				9E850BDD1F57E4FE0004332E /* Networks */,
 				9EC259061F56C26D0078F554 /* Consts */,
 				9EC258FB1F56A1990078F554 /* Tools */,
+				9E386CD31F67876200E97EAE /* Thirds */,
 				9EC258EA1F5682170078F554 /* RootBasic */,
 				9E0197C11F662BBD0064343B /* CommonViews */,
 				9E0197CF1F666A110064343B /* Tab1 */,
@@ -474,7 +489,13 @@
 				TargetAttributes = {
 					9EC258B31F565F250078F554 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = PKX8H4TRR4;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					9EC258CC1F565F250078F554 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -603,6 +624,7 @@
 				9E850BE91F57F3E20004332E /* TestNetwork.m in Sources */,
 				9EE0302B1F6263490026C224 /* NavigationBar.m in Sources */,
 				9E0197CE1F6667BC0064343B /* BaseTableViewController.m in Sources */,
+				9E386CD91F67887B00E97EAE /* Thirds.m in Sources */,
 				9E36A2431F5D27B2009BF875 /* TableViewController.m in Sources */,
 				9EC258ED1F5683030078F554 /* TabBarController.m in Sources */,
 				9E0197EB1F6688E60064343B /* BaseSqlManager.m in Sources */,
@@ -750,15 +772,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = PROJECTS/PROJECTS.entitlements;
+				DEVELOPMENT_TEAM = PKX8H4TRR4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PROJECTS/PROJECTS.pch;
 				INFOPLIST_FILE = PROJECTS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zy.PROJECTS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhonghe.common;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "415e0bdf-4c74-4e29-b032-64b2a2654653";
+				PROVISIONING_PROFILE_SPECIFIER = CF_devel;
 			};
 			name = Debug;
 		};
@@ -768,15 +792,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = PROJECTS/PROJECTS.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = PKX8H4TRR4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PROJECTS/PROJECTS.pch;
 				INFOPLIST_FILE = PROJECTS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zy.PROJECTS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhonghe.common;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "94a30222-e36f-470d-8544-31967d977f1f";
+				PROVISIONING_PROFILE_SPECIFIER = CF_distr;
 			};
 			name = Release;
 		};

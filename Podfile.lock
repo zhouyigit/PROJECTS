@@ -10,6 +10,9 @@ PODS:
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
   - IQKeyboardManager (4.0.13)
+  - JCore (1.1.5)
+  - JPush (3.0.6):
+    - JCore (~> 1.1.1)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
@@ -25,6 +28,7 @@ DEPENDENCIES:
   - AFNetworking/Serialization
   - FMDB
   - IQKeyboardManager
+  - JPush
   - Masonry
   - MBProgressHUD
   - MJExtension
@@ -35,12 +39,14 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   IQKeyboardManager: 8eab4d8111418414619d1df8e4779ce5d0f8d7e2
+  JCore: 9bd9c770c877c583d98b90a68792b8361974c231
+  JPush: c41be50eb1a574a66aeb68d237f00a4ec6ec3a82
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
 
-PODFILE CHECKSUM: af399439816f0acf35c727b7183ffd40a05d434f
+PODFILE CHECKSUM: 066e57afc065a36e83b321908e87bb2005dc7a7d
 
 COCOAPODS: 1.2.0

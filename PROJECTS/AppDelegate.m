@@ -5,6 +5,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Thirds.h"
 
 @interface AppDelegate ()
 
@@ -16,33 +17,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [self dbConfig];
+    //先配置第三方
+    [[Thirds shareInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
     TabBarController *tabc = [[TabBarController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = tabc;
     [self.window makeKeyAndVisible];
     return YES;
-}
-
--(void)dbConfig
-{
-    DBConfigLogic *dbConfigLogic = [[DBConfigLogic alloc] init];
-    //    dbConfigLogic.allowDowngrade = YES; //是否允许数据库降级，默认不允许。
-    BOOL checkResult = [dbConfigLogic checkDatabase:LOCAL_MAIN_DB_PATH newVersion:dbConfigLogic.dbVersion];
-    if (!checkResult) {
-        
-        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"提示"
-                                                            message:@"数据库初始化失败，不能继续加载，请彻底关闭程序后再次尝试。"
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"确定"
-                                                  otherButtonTitles:nil, nil];
-        [alertview show];
-        
-    } else {
-        NSLog(@"check db success.");
-        NSLog(@"\n******** [App Path] *******\n%@\n***************************", NSHomeDirectory());
-    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -64,6 +46,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    [JPUSHService resetBadge];
 }
 
 
@@ -71,5 +55,19 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(nonnull NSData *)deviceToken
+{
+    [[Thirds shareInstance] application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+}
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    [[Thirds shareInstance] application:application didFailToRegisterForRemoteNotificationsWithError:error];
+}
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    [[Thirds shareInstance] application:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+}
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    [[Thirds shareInstance] application:application didReceiveRemoteNotification:userInfo];
+}
 @end

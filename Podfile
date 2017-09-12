@@ -12,6 +12,7 @@ target 'PROJECTS' do
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'FMDB'
+    pod 'JPush'
     
 #    全部AFNetworking
 #    pod 'AFNetworking'
