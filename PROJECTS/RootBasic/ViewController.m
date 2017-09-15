@@ -15,6 +15,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.umengPage = @"testPage";
     
     CGRect frame = CGRectMake(0, 400, 64, 44);
     UIButton *push = [[UIButton alloc] initWithFrame:frame];

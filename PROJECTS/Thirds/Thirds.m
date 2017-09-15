@@ -22,9 +22,27 @@
     
     [self dbConfig];//数据库
     [self jpushConfigWithOption:launchOptions];//极光推送
-    
+    [self umengConfig];//友盟统计
+    [self buglyConfig];//腾讯bugly
     
     return YES;
+}
+
+-(void)buglyConfig {
+    [Bugly startWithAppId:@"48029c3de0"];
+}
+
+-(void)umengConfig {
+    
+    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    [MobClick setAppVersion:version];
+    
+    UMConfigInstance.appKey = @"59b89e00e88bad5b8100000e";
+    UMConfigInstance.channelId = @"App Store";
+    UMConfigInstance.bCrashReportEnabled = NO;
+    [MobClick startWithConfigure:UMConfigInstance];//配置以上参数后调用此方法初始化SDK！
+    
+//    [MobClick setLogEnabled:YES];
 }
 
 -(void)dbConfig {
@@ -78,6 +96,8 @@
                           channel:@"App Store"
                  apsForProduction:isProduction
             advertisingIdentifier:advertisingId];
+    
+    [JPUSHService setLogOFF];
 }
 
 - (void)application:(UIApplication *)application

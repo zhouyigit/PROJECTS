@@ -36,6 +36,18 @@
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [MobClick beginLogPageView:self.umengPage];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [MobClick endLogPageView:self.umengPage];
+}
+
 //-(void)willMoveToParentViewController:(UIViewController *)parent
 //{
 //    [super willMoveToParentViewController:parent];

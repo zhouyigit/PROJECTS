@@ -12,6 +12,8 @@
 {
     static int day = 0;
     day++;
+    NSDictionary *dict = @{@"page" : StringFromInt(day)};
+    [MobClick event:@"getWellBeing" attributes:dict];
     NSString *path = [NSString stringWithFormat:@"福利/10/%d", day];
     return [[self class] GET:path parameters:nil completionHandler:handler];
 }

@@ -13,6 +13,8 @@ target 'PROJECTS' do
     pod 'MBProgressHUD'
     pod 'FMDB'
     pod 'JPush'
+    pod 'UMengAnalytics'
+    pod 'Bugly'
     
 #    全部AFNetworking
 #    pod 'AFNetworking'

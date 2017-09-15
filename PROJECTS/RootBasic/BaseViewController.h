@@ -8,6 +8,8 @@
 
 @interface BaseViewController : UIViewController
 
+@property(strong, nonatomic) NSString *umengPage;
+
 /** 保存执行中的task，删除被取消和完成的task */
 @property(strong, nonatomic) NSMutableDictionary *tasks;
 

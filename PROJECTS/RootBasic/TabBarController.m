@@ -34,7 +34,7 @@
 //    NavigationController *navc2 = [[NavigationController alloc] initWithRootViewController:vc2];
 //    [self addChildViewController:navc2];
     
-    UIViewController *vc3 = [[UIViewController alloc] init];
+    ViewController *vc3 = [[ViewController alloc] init];
     vc3.hidesBottomBarWhenPushed = NO;
     vc3.view.backgroundColor = [UIColor yellowColor];
     vc3.title = @"我";

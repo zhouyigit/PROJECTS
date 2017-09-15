@@ -26,7 +26,7 @@
     // Do any additional setup after loading the view.
     self.navigationController.navigationBar.hidden = YES;
     
-    
+    self.umengPage = @"wellBeingPage";
     
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     _tableView.dataSource = self;
