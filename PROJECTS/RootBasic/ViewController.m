@@ -55,7 +55,7 @@
     [self.view addSubview:localTest];
     [localTest mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(push.mas_right).offset(msLeftRightMargin);
-        make.bottom.offset(0);
+        make.bottom.offset(-100);
         make.width.offset(100);
         make.height.offset(44);
     }];
@@ -95,7 +95,7 @@
         }
         [weak deleteTask:task];
         //        [MBProgressHUD hideHUDForView:weak.view animated:NO];
-                [hud hideAnimated:NO];
+        [hud hideAnimated:NO];
     }];
     [self saveTask:task];
 }
@@ -120,6 +120,7 @@
         //        [MBProgressHUD hideHUDForView:weak.view animated:NO];
         [hud hideAnimated:NO];
     }];
+    [task resume];
     [self saveTask:task];
 }
 

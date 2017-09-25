@@ -25,7 +25,7 @@
 #import "Masonry.h"
 #import "MJExtension.h"
 #import "UIImageView+WebCache.h"
-#import "UMMobClick/MobClick.h"
+#import <UMMobClick/MobClick.h>
 
 #import "TabBarController.h"
 #import "NavigationController.h"
