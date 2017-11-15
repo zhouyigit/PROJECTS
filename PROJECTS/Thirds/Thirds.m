@@ -24,8 +24,15 @@
     [self jpushConfigWithOption:launchOptions];//极光推送
     [self umengConfig];//友盟统计
     [self buglyConfig];//腾讯bugly
+    [self gaodeConfig];//高德地图
     
     return YES;
+}
+
+-(void)gaodeConfig
+{
+    [[AMapServices sharedServices] setEnableHTTPS:YES];//在配置高德 Key 前
+    [AMapServices sharedServices].apiKey = @"af946954060afcf17d86aa8312dcaded";
 }
 
 -(void)buglyConfig {

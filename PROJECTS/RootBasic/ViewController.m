@@ -141,8 +141,15 @@
 //    i++;
 //    [self.navigationController pushViewController:vc animated:YES];
     
+//    CATransition* transition = [CATransition animation];
+//    transition.type = kCATransitionPush;            //改变视图控制器出现的方式
+//    transition.subtype = kCATransitionFromRight;     //出现的位置
+//    [NavC.view.layer addAnimation:transition forKey:kCATransition];
+    
     TableViewController *tvc = [[TableViewController alloc] initWithDataSource:_wellBeings];
     [NavC pushViewController:tvc animated:YES];
+//    [self presentModalViewController:tvc animated:YES];
+//    [self presentViewController:tvc animated:YES completion:^{}];
     
 }
 

@@ -11,6 +11,8 @@
 #define OnePX (1/[UIScreen mainScreen].scale)
 /** 屏幕宽度 */
 #define WIDTH [UIScreen mainScreen].bounds.size.width
+/** 屏幕高度 */
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
 
 /** 导航控制器 **/
 #define NavC ((NavigationController*)TabC.selectedViewController)

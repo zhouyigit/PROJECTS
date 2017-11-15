@@ -21,6 +21,7 @@
     [[Thirds shareInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
     TabBarController *tabc = [[TabBarController alloc] init];
+    [tabc setSelectedIndex:2];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = tabc;
     [self.window makeKeyAndVisible];

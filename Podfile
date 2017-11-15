@@ -17,6 +17,12 @@ target 'PROJECTS' do
     pod 'JPush'
     pod 'UMengAnalytics'
     pod 'Bugly'
+    pod 'AliPay'
+    
+#    高德地图
+    pod 'AMap3DMap'
+    pod 'AMapLocation'
+    pod 'AMapSearch'
     
 #    全部AFNetworking
 #    pod 'AFNetworking'

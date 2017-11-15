@@ -26,6 +26,7 @@
 		9E36A2511F5D4C93009BF875 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A2501F5D4C93009BF875 /* BaseTableViewCell.m */; };
 		9E36A2541F5D4CD2009BF875 /* WellBeingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A2531F5D4CD2009BF875 /* WellBeingCell.m */; };
 		9E386CD91F67887B00E97EAE /* Thirds.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E386CD81F67887B00E97EAE /* Thirds.m */; };
+		9E45D78B1F8DC645007E2F6D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E45D78A1F8DC645007E2F6D /* MapViewController.m */; };
 		9E850BD91F57AB610004332E /* ColorConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BD81F57AB610004332E /* ColorConsts.m */; };
 		9E850BDC1F57ACD40004332E /* MeasureConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BDB1F57ACD40004332E /* MeasureConsts.m */; };
 		9E850BE31F57EA7A0004332E /* BaseNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BE21F57EA7A0004332E /* BaseNetwork.m */; };
@@ -107,6 +108,8 @@
 		9E36A2531F5D4CD2009BF875 /* WellBeingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellBeingCell.m; sourceTree = "<group>"; };
 		9E386CD71F67887B00E97EAE /* Thirds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thirds.h; sourceTree = "<group>"; };
 		9E386CD81F67887B00E97EAE /* Thirds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thirds.m; sourceTree = "<group>"; };
+		9E45D7891F8DC645007E2F6D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		9E45D78A1F8DC645007E2F6D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		9E850BD71F57AB610004332E /* ColorConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConsts.h; sourceTree = "<group>"; };
 		9E850BD81F57AB610004332E /* ColorConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConsts.m; sourceTree = "<group>"; };
 		9E850BDA1F57ACD40004332E /* MeasureConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureConsts.h; sourceTree = "<group>"; };
@@ -289,6 +292,15 @@
 			path = Thirds;
 			sourceTree = "<group>";
 		};
+		9E45D7881F8DC5EE007E2F6D /* GaoDeMap */ = {
+			isa = PBXGroup;
+			children = (
+				9E45D7891F8DC645007E2F6D /* MapViewController.h */,
+				9E45D78A1F8DC645007E2F6D /* MapViewController.m */,
+			);
+			path = GaoDeMap;
+			sourceTree = "<group>";
+		};
 		9E850BDD1F57E4FE0004332E /* Networks */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				9EDA43571F67845D00613A15 /* PROJECTS.entitlements */,
+				9E45D7881F8DC5EE007E2F6D /* GaoDeMap */,
 				9E36A24D1F5D4C47009BF875 /* Cells */,
 				9E36A2451F5D38C2009BF875 /* Models */,
 				9E36A2401F5D276D009BF875 /* Tests */,
@@ -598,6 +611,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PROJECTS/Pods-PROJECTS-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/AliPay/AlipaySDK.bundle",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
@@ -638,6 +653,7 @@
 				9E36A2431F5D27B2009BF875 /* TableViewController.m in Sources */,
 				9EC258ED1F5683030078F554 /* TabBarController.m in Sources */,
 				9E0197EB1F6688E60064343B /* BaseSqlManager.m in Sources */,
+				9E45D78B1F8DC645007E2F6D /* MapViewController.m in Sources */,
 				9E850BE31F57EA7A0004332E /* BaseNetwork.m in Sources */,
 				9E0197E51F66850B0064343B /* ARDBConfigBase.m in Sources */,
 				9EC259021F56A36D0078F554 /* UIImage+Color.m in Sources */,

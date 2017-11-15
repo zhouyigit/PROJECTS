@@ -7,6 +7,7 @@
 #import <Foundation/Foundation.h>
 
 #import <Bugly/Bugly.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
 
 // 引入JPush功能所需头文件
 #import "JPUSHService.h"
